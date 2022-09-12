@@ -1,0 +1,12 @@
+.logo_de_marca{
+    width: 100px;
+}
+
+.linkText{ 
+    color: #4577bb ;
+    text-decoration:none; 
+}
+
+.linkText:hover{ 
+    color: black ;
+}
