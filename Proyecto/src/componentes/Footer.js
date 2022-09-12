@@ -5,7 +5,7 @@ import { BsLink45Deg } from "react-icons/bs";
 
 function Footer() {
     return(
-        <div id="footer" class="container">
+        <div className="pies" id="footer" class="container">
             <div class="row text-center">
             <div class="col-12 col-lg">
                 <a href="https://www.instagram.com/chileprops/?hl=es">Official Website <BsLink45Deg/></a>
