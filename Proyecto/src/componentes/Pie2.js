@@ -1,6 +1,7 @@
 import React from 'react';
 import { CDBFooter, CDBFooterLink, CDBBox, CDBBtn, CDBIcon } from 'cdbreact';
 import logo from '../chileprops.png';
+import "../estilos/Pie2.css";
 
 export const Pie2 = () => {
     return (
@@ -9,9 +10,9 @@ export const Pie2 = () => {
             <CDBBox display="flex" justifyContent="between" className="flex-wrap">
             <CDBBox>
                 <a href="/" className="d-flex align-items-center p-0 text-dark">
-                <span className="ml-3 h5 font-weight-bold" style={{ color:"#4577bb" }}> Productos Premium</span>
+                <h5 className='Titulo'>Productos Premium</h5>
                 </a>
-                <p className="my-3" style={{ color:"black", width: '250px' }}>
+                <p className="my-3">
                 Creamos productos con los materiales de mas alta calidad para garantizar siempre la mejor expereriencia de usuario
                 </p>
                 <CDBBox display="flex" className="mt-4">
