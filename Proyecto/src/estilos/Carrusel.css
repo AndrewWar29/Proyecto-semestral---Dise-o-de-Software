@@ -1,11 +1,10 @@
 .carousel-inner img{
-    max-height: 85vh;
+    max-height: 100vh;
 	object-fit: cover;
-    filter:contrast(50%);
+    opacity: 0.9;
 }
 
 .carousel-inner h5, p{
     color: white;
-    text-shadow: 5px 5px 10px black;
     font-weight: bold;
 }

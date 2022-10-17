@@ -1,28 +1,28 @@
-//import logo from './logo.svg';
 import './App.css';
-import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Carrusel } from './componentes/Carrusel.js';
-import { Footer } from './componentes/Footer.js';
-import { Footer2 } from './componentes/Footer2.js';
-import {Home} from './componentes/Home';
-import { Contacto } from './componentes/Contacto';
-import Quienessomos from './componentes/Quienessomos';
-import { Vista1 } from './componentes/Vista1';
+import { Navegador } from './components/Navegador';
+import {Home} from './components/Home';
+import {Quienessomos} from './components/Quienessomos';
+import {Proyectos} from './components/Proyectos';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
-  return (    
+  return (
     <div>
-      <Router>
-      <Vista1 />
-      <Routes>
-          <Route exact path="/" element={<Home/>} />
-          <Route path="/contacto" element={< Contacto/>} />
-          <Route path="/quienessomos" element={< Quienessomos/>} />
-      </Routes>
-      </Router>
-    </div>
+    <Router>
+      <Navegador/>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/Quienessomos" element={<Quienessomos />}></Route>
+          <Route path="/Proyectos" element={<Proyectos />}></Route>
+          {/* <Route path="/" element={<Home />}></Route>
+          <Route path="/projects" element={<Projects />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
+          <Route path="*" element={<Error />}></Route> */}
+        </Routes>
+    </Router>
+  </div>
   );
 }
 

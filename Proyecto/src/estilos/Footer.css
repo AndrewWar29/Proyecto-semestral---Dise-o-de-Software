@@ -15,3 +15,12 @@
 .pies{
 	background-color: white;
 }
+
+.links{
+	text-decoration: none;
+}
+
+.shadow span{
+	text-decoration: none;
+	color: red;
+}
