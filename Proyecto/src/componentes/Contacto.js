@@ -1,14 +1,40 @@
 import React from "react";
+import "../estilos/contacto.css";
+import foto_1 from '../contacto boba.gif';
 
 function Contacto() {
     return(
         <div>
-            <h2>Contacto</h2>
-            <h1>Informacion de Contacto</h1>
+        <div class="section">
+		<div class="container">
+			<div class="content-section">
+				<div class="title">
+					<h1>Sobre Nosotros</h1>
+				</div>
+				<div class="content">
+					<h3>¿Quienes somos?</h3>
+					<p>Chileprops es un pequeño emprendimiento creado en el año 2019. Se dedica a la producción de replicas y props de peliculas. Especificamente todo lo que tenga que ver con el universo Geek, como Marvel, DC, Star wars y más. Todos los productos son realizados con nuestras impresoras 3D y pintados a mano. Si desea realizar una encomienda revisar nuestras distintas redes sociales. </p>
+					<div class="button">
+						<a href="">Más información</a>
+					</div>
+				</div>
+				<div class="social">
+					<a href="https://www.facebook.com/profile.php?id=100064928802785"><i class="fab fa-facebook-f"></i></a>
+					<a href="https://www.youtube.com/channel/UCvdPVa5nW0_Ajl80rVG3mOA"><i class="fab fa-youtube"></i></a>
+					<a href="https://www.instagram.com/chileprops/"><i class="fab fa-instagram"></i></a>
+				</div>
+			</div>
+			<div class="image-section">
+            <img src={foto_1}/>
+		    </div>
+            
         </div>
-
-
         
+        </div>
+        </div>
+        
+        
+
     )
 }
 
