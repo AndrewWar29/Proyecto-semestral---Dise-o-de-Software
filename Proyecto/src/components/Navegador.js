@@ -58,19 +58,6 @@ function Navegador(){
                 </li>
                 <li className="nav-item">
                     <Link
-                    to="/Quienessomos"
-                    onClick={() => setNavOpen(!navOpen)}
-                    style={{
-                        top: navOpen ? "0" : "120px",
-                        transitionDelay: navOpen ? "1s" : "0s",
-                    }}
-                    >
-                    Sobre Nosotros
-                    </Link>
-                    <div className="nav-item-wrapper"></div>
-                </li>
-                <li className="nav-item">
-                    <Link
                     to="/contact"
                     onClick={() => setNavOpen(!navOpen)}
                     style={{
