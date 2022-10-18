@@ -16,7 +16,7 @@ function Carrusel() {
             />
             <Carousel.Caption>
             <h5>This is the way!</h5>
-            <p>Casco replica de Boba Fett basado en la serie "The Book of Boba Fett".</p>
+            <p className="pdecarrusel">Casco replica de Boba Fett basado en la serie "The Book of Boba Fett".</p>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>

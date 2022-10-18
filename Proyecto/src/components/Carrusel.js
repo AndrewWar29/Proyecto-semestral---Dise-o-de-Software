@@ -15,8 +15,8 @@ function Carrusel() {
             alt="First slide"
             />
             <Carousel.Caption>
-            <h5>This is the way!</h5>
-            <p>Casco replica de Boba Fett basado en la serie "The Book of Boba Fett".</p>
+            <h5 className="pdecarrusel">This is the way!</h5>
+            <p className="pdecarrusel">Casco replica de Boba Fett basado en la serie "The Book of Boba Fett".</p>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -26,8 +26,8 @@ function Carrusel() {
             alt="Second slide"
             />
             <Carousel.Caption>
-            <h5>Your friendly neighborhood Spider-Man 🕸🕷</h5>
-            <p>Mascara replica de Spider-Man basado en la pelicula "Infinity War".</p>
+            <h5 className="pdecarrusel"> "Your friendly neighborhood Spider-Man 🕸🕷</h5>
+            <p className="pdecarrusel">Mascara replica de Spider-Man basado en la pelicula "Infinity War".</p>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -37,8 +37,8 @@ function Carrusel() {
             alt="Third slide"
             />
             <Carousel.Caption>
-            <h5>I am Groot!</h5>
-            <p>
+            <h5 className="pdecarrusel">I am Groot!</h5>
+            <p className="pdecarrusel">
                 Figura impresa en 3d de Baby Groot.
             </p>
             </Carousel.Caption>
