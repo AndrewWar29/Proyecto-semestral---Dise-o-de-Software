@@ -1,4 +1,5 @@
 import React from "react";
+import { MainContent } from './MainContent.js';
 
 
 const api_url = 'https://lxulzipcrcnbmeb.form.io/productos/submission';
@@ -92,18 +93,7 @@ getISS();
 
 function Tienda(){
     return(  
-    <body>
-
-    <span id= "nombre_producto0"></span>
-    <span id= "precio_producto0"></span>
-    <span id="descripcion0"> </span>
-    <span id="nombre_producto1"> </span>
-    <span id= "precio_producto1"></span>
-    <span id="descripcion1"> </span>
-    <span id="nombre_producto2"> </span>
-    <span id="nombre_producto3"> </span>
-
-    </body>
+      <MainContent/>
     )
 
 }

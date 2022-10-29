@@ -2,11 +2,12 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navegador } from './components/Navegador';
 import {Home} from './components/Home';
-import {Quienessomos} from './components/Quienessomos';
 import {Proyectos} from './components/Proyectos';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Contacto } from './componentes/Contacto';
+import { Contacto } from './components/Contacto';
 import { Tienda } from './components/Tienda';
+import * as serviceWorker from './serviceWorker';
+
 function App() {
   return (
     <div>
@@ -14,7 +15,6 @@ function App() {
       <Navegador/>
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="/Quienessomos" element={<Quienessomos />}></Route>
           <Route path="/Proyectos" element={<Proyectos />}></Route>
           <Route path="/contact" element={<Contacto />}></Route>
           <Route path="/Tienda" element={<Tienda />}></Route>
@@ -30,3 +30,4 @@ function App() {
 }
 
 export default App;
+serviceWorker.unregister();

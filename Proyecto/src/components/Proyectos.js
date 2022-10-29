@@ -12,9 +12,6 @@ function Proyectos(){
     return(
         <div className="wrapper">
             <div className="header">
-                <h1 className="anim">Proyectos</h1>
-                <p className="anim">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse illum commodi aperiam! In quo enim esse, tenetur. 
-                Ab voluptatem alias aliquid harum corporis quos, pariatur libero ex ipsam beatae eius.</p>
             </div>
 
             <div className="work">
@@ -25,8 +22,7 @@ function Proyectos(){
             </div>
 
             <div className="header2">
-            <h1 className="anim">Proyectos</h1>
-                <p className="anim">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse illum commodi aperiam! In quo enim esse, tenetur. 
+                <p className="anim2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse illum commodi aperiam! In quo enim esse, tenetur. 
                 Ab voluptatem alias aliquid harum corporis quos, pariatur libero ex ipsam beatae eius.</p>
             </div>
 
