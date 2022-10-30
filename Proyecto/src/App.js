@@ -7,7 +7,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Contacto } from './components/Contacto';
 import { Tienda } from './components/Tienda';
 import * as serviceWorker from './serviceWorker';
-import { Prueba } from './components/Prueba';
 
 function App() {
   return (
@@ -18,12 +17,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/Proyectos" element={<Proyectos />}></Route>
           <Route path="/contact" element={<Contacto />}></Route>
-          <Route path="/Tienda" element={<Prueba />}></Route>
-          {/* <Route path="/" element={<Home />}></Route>
-          <Route path="/projects" element={<Projects />}></Route>
-          <Route path="/about" element={<About />}></Route>
-          <Route path="/contact" element={<Contact />}></Route>
-          <Route path="*" element={<Error />}></Route> */}
+          <Route path="/Tienda" element={<Tienda />}></Route>
         </Routes>
     </Router>
   </div>

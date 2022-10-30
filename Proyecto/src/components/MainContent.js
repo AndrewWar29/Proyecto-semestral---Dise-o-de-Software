@@ -1,5 +1,5 @@
 import React from 'react'
-import product_card from "../data/product_data";
+
 import "../estilos/MainContent.css";
 
 const api_url = 'https://lxulzipcrcnbmeb.form.io/productos/submission';
@@ -88,7 +88,8 @@ async function getISS() {
     document.getElementById("descripcion9").textContent = descripcion9;
 
 }
-
+const product_card = [ ]
+export default product_card;
 getISS();
 
 const MainContent = () => {

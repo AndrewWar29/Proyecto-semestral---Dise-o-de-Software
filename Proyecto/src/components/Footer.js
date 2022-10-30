@@ -1,6 +1,6 @@
 import React from 'react';
 import { CDBFooter, CDBFooterLink, CDBBox, CDBBtn, CDBIcon } from 'cdbreact';
-import logo from '../chileprops.png';
+import logo from '../images/chileprops.png';
 
 export const Footer = () => {
     return (

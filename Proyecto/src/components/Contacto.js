@@ -1,6 +1,6 @@
 import React from "react";
 import "../estilos/contacto.css";
-import foto_1 from '../contacto boba.gif';
+import foto_1 from '../images/contacto boba.gif';
 
 function Contacto() {
     return(

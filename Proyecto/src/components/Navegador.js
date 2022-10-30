@@ -1,7 +1,7 @@
 import React from "react"
 import { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
-import logo from '../chileprops.png';
+import logo from '../images/chileprops.png';
 import "../estilos/Navegador.css";
 
 function Navegador(){
@@ -52,7 +52,7 @@ function Navegador(){
                         transitionDelay: navOpen ? "0.9s" : "0s",
                     }}
                     >
-                    Proyectos
+                    Galería
                     </Link>
                     <div className="nav-item-wrapper"></div>
                 </li>

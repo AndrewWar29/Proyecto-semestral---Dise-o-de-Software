@@ -1,17 +1,11 @@
 import React from "react";
 import "../estilos/Proyectos.css";
-import foto_1 from '../project1.jpg';
-import foto_2 from '../project2.jpg';
-import foto_3 from '../project3.jpg';
-import foto_4 from '../project4.jpg';
-import foto_5 from '../project5.jpg';
-import foto_6 from '../project6.jpg';
-import Printer from '../3D-Printer.gif';
-import Printer2 from '../groot.gif';
-import shield from '../shield.png';
-import loki from '../loki.png';
-import groot from '../groot.png';
-import iron from '../helmet.png';
+import Printer from '../images/3D-Printer.gif';
+import Printer2 from '../images/groot.gif';
+import shield from '../images/shield.png';
+import loki from '../images/loki.png';
+import groot from '../images/groot.png';
+import iron from '../images/helmet.png';
 
 function Proyectos(){
     return(
@@ -27,8 +21,7 @@ function Proyectos(){
             </div>
 
             <div className="header2">
-                <p className="anim2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse illum commodi aperiam! In quo enim esse, tenetur. 
-                Ab voluptatem alias aliquid harum corporis quos, pariatur libero ex ipsam beatae eius.</p>
+                <p className="anim2"></p>
             </div>
 
             <div className="work2">

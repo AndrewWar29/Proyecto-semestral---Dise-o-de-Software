@@ -1,8 +1,8 @@
 import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
-import foto_1 from '../boba_fett.gif';
-import foto_2 from '../spiderman2.gif';
-import foto_3 from '../groot.gif';
+import foto_1 from '../images/boba_fett.gif';
+import foto_2 from '../images/spiderman2.gif';
+import foto_3 from '../images/groot.gif';
 import "../estilos/Carrusel.css";
 
 function Carrusel() {
