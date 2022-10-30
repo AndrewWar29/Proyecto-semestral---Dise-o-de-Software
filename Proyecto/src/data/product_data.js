@@ -1,4 +1,3 @@
-
 const api_url = 'https://lxulzipcrcnbmeb.form.io/productos/submission';
     
 async function getISS() {
@@ -88,9 +87,10 @@ async function getISS() {
 
 getISS();
 const product_card = [
+
     {
         id: 1,
-        product_name: "Iron Man",
+        product_name:"Iron Man",
         description: "Descripcion del Producto",
         price: 350,
         currency: "$",

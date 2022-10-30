@@ -1,0 +1,15 @@
+.titulo_prueba {
+    left: 0;
+    line-height: 200px;
+    margin-top: 300px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+}
+
+.Carta{
+    margin-top: 200px;
+    left: 40%;
+}
+
