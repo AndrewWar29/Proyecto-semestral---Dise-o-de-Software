@@ -1,8 +1,24 @@
-import React from 'react';
+import React, { useEffect,useState } from "react";
 import { CDBFooter, CDBFooterLink, CDBBox, CDBBtn, CDBIcon } from 'cdbreact';
 import logo from '../images/chileprops.png';
 
 export const Footer = () => {
+
+    const [inputText,setInputText] = useState("");
+    const [savedData,setSavedData] = useState(false);
+
+    const handleInputChange = (e) =>{
+        const text = e.target.value
+        setInputText(text);
+        console.log(inputText);
+    }
+
+    const saveData = () =>{
+        localStorage.setItem("nombre",inputText);
+        alert("Se ha guardado tu direccion de correo");
+        setSavedData(true);
+    }
+
     return (
         <CDBFooter className="shadow">
         <CDBBox display="flex" flex="column" className="mx-auto py-5" style={{ width: '90%' }}>
@@ -58,6 +74,18 @@ export const Footer = () => {
                 </CDBBox>
             </CDBBox>
             </CDBBox>
+            
+            <input 
+                className="input" 
+                onChange={handleInputChange}
+                placeholder="Ingrese su correo aqui"
+            ></input>
+            
+            <button 
+                className="btn"
+                onClick={saveData}
+            >Guardar</button>
+
             <small className="text-center mt-5">&copy; Chileprops, 2022. Todos los derechos reservados.</small>
         </CDBBox>
         </CDBFooter>

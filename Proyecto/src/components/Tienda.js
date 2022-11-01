@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect,useState } from "react";
 import "../estilos/MainContent.css";
 import Darth from '../images/Darth-Vader-Mask.png';
 import helmet from '../images/helmet.png';
@@ -101,6 +101,17 @@ async function getISS() {
 getISS();
 
 function Tienda(){
+
+    const[nombre,setNombre] = useState("");
+
+    const getData = ()=> {
+        return localStorage.getItem("nombre");
+    }
+
+    useEffect (()=>{
+        setNombre(getData())
+    },[]);
+
     return (
             <div className="main_content">
                 <div className="card">
@@ -222,8 +233,7 @@ function Tienda(){
                         <div className="btn">Add to cart</div>
                     </div>
                 </div>
-
-
+                <h2> El recibo de compra sera enviado a {nombre}</h2>
             </div>
         );
 }
