@@ -11,6 +11,9 @@ function Proyectos(){
     return(
         <div className="wrapper">
             <div className="header">
+            <div className="title_proyectos">
+					<h1>Galería</h1>
+			</div>
             </div>
 
             <div className="work">

@@ -13,7 +13,7 @@ import hammer from '../images/hammer.png';
 
 const api_url = 'https://lxulzipcrcnbmeb.form.io/productos/submission';
     
-async function getISS() {
+async function getcatalogo() {
     const response = await fetch(api_url);
     const data = await response.json();
     const producto0 = data[9].data.nombreProducto;
@@ -98,7 +98,7 @@ async function getISS() {
 
 }
 
-getISS();
+getcatalogo();
 
 function Tienda(){
 

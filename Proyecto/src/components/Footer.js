@@ -47,10 +47,9 @@ export const Footer = () => {
                 Chileprops
                 </p>
                 <CDBBox flex="column" style={{ cursor: 'pointer', padding: '0' }}>
-                <CDBFooterLink href="/">Recursos</CDBFooterLink>
-                <CDBFooterLink href="/">Sobre Nosotros</CDBFooterLink>
-                <CDBFooterLink href="/">Contacto</CDBFooterLink>
-                <CDBFooterLink href="/">Blog</CDBFooterLink>
+                <CDBFooterLink href="/Proyectos">Recursos</CDBFooterLink>
+                <CDBFooterLink href="/contact">Sobre Nosotros</CDBFooterLink>
+                <CDBFooterLink href="/contact">Contacto</CDBFooterLink>
                 </CDBBox>
             </CDBBox>
             <CDBBox>
@@ -58,7 +57,7 @@ export const Footer = () => {
                 Ayuda
                 </p>
                 <CDBBox flex="column" style={{ cursor: 'pointer', padding: '0' }}>
-                <CDBFooterLink href="/">Soporte</CDBFooterLink>
+                <CDBFooterLink href="/contact">Soporte</CDBFooterLink>
                 <CDBFooterLink href="/">Iniciar Sesion</CDBFooterLink>
                 <CDBFooterLink href="/">Registrarse</CDBFooterLink>
                 </CDBBox>
@@ -68,23 +67,25 @@ export const Footer = () => {
                 Productos
                 </p>
                 <CDBBox flex="column" style={{ cursor: 'pointer', padding: '0' }}>
-                <CDBFooterLink href="/">Materiales</CDBFooterLink>
-                <CDBFooterLink href="/">Loop</CDBFooterLink>
-                <CDBFooterLink href="/">Contrast</CDBFooterLink>
+                <CDBFooterLink href="/Proyectos">Materiales</CDBFooterLink>
+                <CDBFooterLink href="/">Catalogo</CDBFooterLink>
                 </CDBBox>
             </CDBBox>
             </CDBBox>
-            
+            <div>
+
             <input 
                 className="input" 
                 onChange={handleInputChange}
                 placeholder="Ingrese su correo aqui"
             ></input>
+
             
             <button 
                 className="btn"
                 onClick={saveData}
             >Guardar</button>
+            </div>
 
             <small className="text-center mt-5">&copy; Chileprops, 2022. Todos los derechos reservados.</small>
         </CDBBox>
