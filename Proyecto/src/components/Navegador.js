@@ -98,7 +98,7 @@ function Navegador(){
                     <ul>
                     <li>
                         <a
-                        href="#"
+                        href="https://www.youtube.com/channel/UCvdPVa5nW0_Ajl80rVG3mOA/featured"
                         style={{
                             bottom: navOpen ? "0" : "-20px",
                             opacity: navOpen ? "1" : "0",
@@ -110,7 +110,7 @@ function Navegador(){
                     </li>
                     <li>
                         <a
-                        href="#"
+                        href="https://www.instagram.com/chileprops/"
                         style={{
                             bottom: navOpen ? "0" : "-20px",
                             opacity: navOpen ? "1" : "0",
