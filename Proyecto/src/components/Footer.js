@@ -7,6 +7,9 @@ export const Footer = () => {
     const [inputText,setInputText] = useState("");
     const [savedData,setSavedData] = useState(false);
 
+    const localName=localStorage.getItem("name")
+
+
     const handleInputChange = (e) =>{
         const text = e.target.value
         setInputText(text);
@@ -67,15 +70,14 @@ export const Footer = () => {
                 </p>
                 <CDBBox flex="column" style={{ cursor: 'pointer', padding: '0' }}>
                 <CDBFooterLink href="/contact">Soporte</CDBFooterLink>
-                <div className="d-grid gap-2">
                 <CDBFooterLink href="/Registro">Registrarse</CDBFooterLink>
-                <CDBBtn color="light" className="d-flex gap-2" circle>
-                <button onClick={logout}>Cerrar Sesión</button>
-                </CDBBtn>
-                <CDBBtn color="light" className="d-flex gap-2" circle>
-                <button onClick={deleteAccount} >Borrar Cuenta</button>
-                </CDBBtn>
-                </div>
+                <CDBFooterLink href="/Registro">
+                <a onClick={logout}>Cerrar Sesión</a>
+                </CDBFooterLink >
+                <CDBFooterLink href="/Registro">
+                <a onClick={deleteAccount} >Borrar Cuenta</a>
+                </CDBFooterLink>
+                
 
                 </CDBBox>
             </CDBBox>
@@ -89,6 +91,7 @@ export const Footer = () => {
                 </CDBBox>
             </CDBBox>
             </CDBBox>
+            <small className="text-center"> Bienvenido {localName}</small>
             <small className="text-center mt-5">&copy; Chileprops, 2022. Todos los derechos reservados.</small>
         </CDBBox>
         </CDBFooter>

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import {Home} from './Home';
 import { Footer } from './Footer.js';
+import { Button } from "react-bootstrap";
 import '../estilos/Registro.css';
 
 function Registro(){
@@ -59,6 +60,7 @@ function Registro(){
                 </div>
                 :
                 <div className="container">
+                        <h1>Bienvenido a Chileprops:</h1>
                         <div className="input_space">
                             <input placeholder="Nombre" type='text' ref={name} />
                         </div>
