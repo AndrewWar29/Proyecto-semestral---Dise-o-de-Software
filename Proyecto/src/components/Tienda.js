@@ -101,17 +101,6 @@ async function getcatalogo() {
 getcatalogo();
 
 function Tienda(){
-
-    const[nombre,setNombre] = useState("");
-
-    const getData = ()=> {
-        return localStorage.getItem("nombre");
-    }
-
-    useEffect (()=>{
-        setNombre(getData())
-    },[]);
-
     return (
             <div className="main_content">
                 <div className="card">
@@ -221,19 +210,6 @@ function Tienda(){
                         <div className="btn">Add to cart</div>
                     </div>
                 </div>
-
-                <div className="card">
-                    <div className="card_img">
-                        <img src={Darth} />
-                    </div>
-                    <div className="card_header">
-                        <h2 id="nombre_producto9"></h2>
-                        <p id="descripcion9"></p>
-                        <p className="price" id="precio_producto9"></p>
-                        <div className="btn">Add to cart</div>
-                    </div>
-                </div>
-                <h2> El recibo de compra sera enviado a {nombre}</h2>
             </div>
         );
 }

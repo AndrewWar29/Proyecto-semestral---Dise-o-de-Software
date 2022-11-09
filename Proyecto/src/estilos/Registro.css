@@ -1,0 +1,42 @@
+.container{
+    margin-top: 100px;
+    background-color: white;
+    text-align : center;
+    position: relative;
+}
+.input_space{
+    margin-bottom: 10px;
+}
+.input[type=text]{
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+     border-radius: 20px;
+     border: 1px solid #2d9fd9;
+     color: #a0d18c;
+     width: 250px;
+     height: 30px;
+     padding-left: 10px;
+    }
+    
+.boton_registro{
+    background-color:#8eb1e1;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+.logout{
+    margin-right: 5px;
+    color: white;
+    font-weight: 400;
+}
+.delete{
+    margin-right: 5px;
+    color: white;
+    background-color: rgb(19, 103, 142);
+    font-weight: 400;
+}

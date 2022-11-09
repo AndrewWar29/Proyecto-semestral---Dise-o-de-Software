@@ -6,7 +6,10 @@ import {Proyectos} from './components/Proyectos';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Contacto } from './components/Contacto';
 import { Tienda } from './components/Tienda';
+import { Registro} from './components/Registro';
+import { Footer } from './components/Footer.js';
 import * as serviceWorker from './serviceWorker';
+import './estilos/Registro.css';
 
 function App() {
   return (
@@ -18,7 +21,9 @@ function App() {
           <Route path="/Proyectos" element={<Proyectos />}></Route>
           <Route path="/contact" element={<Contacto />}></Route>
           <Route path="/Tienda" element={<Tienda />}></Route>
+          <Route path="/Registro" element={<Registro />}></Route>
         </Routes>
+      <Footer/>
     </Router>
   </div>
   );

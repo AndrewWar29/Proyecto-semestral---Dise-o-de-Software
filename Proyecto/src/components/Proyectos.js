@@ -31,10 +31,6 @@ function Proyectos(){
                 <img className="anim" src={Printer} alt="project img" ></img>
                 <img className="anim" src={Printer2} alt="project img" ></img>
             </div>
-
-            <div className="footer">
-                <p>&copy; Chileprops, 2022. Todos los derechos reservados.</p>
-            </div>
         </div>
 
     );

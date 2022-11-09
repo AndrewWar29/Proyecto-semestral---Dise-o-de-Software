@@ -19,6 +19,15 @@ export const Footer = () => {
         setSavedData(true);
     }
 
+    const logout=()=>{
+        localStorage.removeItem("signUp")
+        window.location.reload()
+    }
+    const deleteAccount=()=>{ 
+        localStorage.clear()
+        window.location.reload()
+    }
+
     return (
         <CDBFooter className="shadow">
         <CDBBox display="flex" flex="column" className="mx-auto py-5" style={{ width: '90%' }}>
@@ -54,12 +63,20 @@ export const Footer = () => {
             </CDBBox>
             <CDBBox>
                 <p className="h5 mb-4" style={{ color:"#4577bb", fontWeight: '600' }}>
-                Ayuda
+                Cuenta
                 </p>
                 <CDBBox flex="column" style={{ cursor: 'pointer', padding: '0' }}>
                 <CDBFooterLink href="/contact">Soporte</CDBFooterLink>
-                <CDBFooterLink href="/">Iniciar Sesion</CDBFooterLink>
-                <CDBFooterLink href="/">Registrarse</CDBFooterLink>
+                <div className="d-grid gap-2">
+                <CDBFooterLink href="/Registro">Registrarse</CDBFooterLink>
+                <CDBBtn color="light" className="d-flex gap-2" circle>
+                <button onClick={logout}>Cerrar Sesión</button>
+                </CDBBtn>
+                <CDBBtn color="light" className="d-flex gap-2" circle>
+                <button onClick={deleteAccount} >Borrar Cuenta</button>
+                </CDBBtn>
+                </div>
+
                 </CDBBox>
             </CDBBox>
             <CDBBox>
@@ -72,21 +89,6 @@ export const Footer = () => {
                 </CDBBox>
             </CDBBox>
             </CDBBox>
-            <div>
-
-            <input 
-                className="input" 
-                onChange={handleInputChange}
-                placeholder="Ingrese su correo aqui"
-            ></input>
-
-            
-            <button 
-                className="btn"
-                onClick={saveData}
-            >Guardar</button>
-            </div>
-
             <small className="text-center mt-5">&copy; Chileprops, 2022. Todos los derechos reservados.</small>
         </CDBBox>
         </CDBFooter>
