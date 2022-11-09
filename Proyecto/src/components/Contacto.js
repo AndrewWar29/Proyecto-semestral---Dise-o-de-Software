@@ -4,7 +4,6 @@ import foto_1 from '../images/contacto boba.gif';
 
 function Contacto() {
     return(
-        <div>
         <div className="section_contacto">
 		<div className="container_contacto">
 			<div className="content-section_contacto">
@@ -30,7 +29,6 @@ function Contacto() {
             
         </div>
         
-        </div>
         </div>
         
         
