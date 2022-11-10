@@ -1,5 +1,5 @@
 .logo_de_marca{
-    width: 100px;
+    width: 70px;
 }
 
 .linkText{ 
@@ -13,4 +13,13 @@
 
 .navegacion{
     background-color: white;
+}
+
+.justify-content-end{
+    text-align: left;
+
+}
+
+.navbar  a {
+    font-size: 18px;
 }

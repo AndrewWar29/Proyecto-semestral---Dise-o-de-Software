@@ -7,8 +7,6 @@ export const Footer = () => {
     const [inputText,setInputText] = useState("");
     const [savedData,setSavedData] = useState(false);
 
-    const localName=localStorage.getItem("name")
-
 
     const handleInputChange = (e) =>{
         const text = e.target.value
@@ -91,7 +89,6 @@ export const Footer = () => {
                 </CDBBox>
             </CDBBox>
             </CDBBox>
-            <small className="text-center"> Bienvenido {localName}</small>
             <small className="text-center mt-5">&copy; Chileprops, 2022. Todos los derechos reservados.</small>
         </CDBBox>
         </CDBFooter>

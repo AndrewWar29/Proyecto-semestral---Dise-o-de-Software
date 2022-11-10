@@ -8,6 +8,7 @@ import { Contacto } from './components/Contacto';
 import { Tienda } from './components/Tienda';
 import { Registro} from './components/Registro';
 import { Footer } from './components/Footer.js';
+import {Vista1} from './components/vista1';
 import * as serviceWorker from './serviceWorker';
 import './estilos/Registro.css';
 
@@ -15,7 +16,7 @@ function App() {
   return (
     <div>
     <Router>
-      <Navegador/>
+      <Vista1/>
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/Proyectos" element={<Proyectos />}></Route>
