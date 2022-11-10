@@ -1,5 +1,5 @@
 .carousel-inner img{
-    max-height: 85vh;
+    max-height: 90vh;
 	object-fit: cover;
     opacity: 0.85;
 }
